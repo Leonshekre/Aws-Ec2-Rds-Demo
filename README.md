@@ -1,11 +1,9 @@
 # AWS Web Demo (using ELB+Rc2+RDS)
-
 <img src="/diagrams/AWS_Cloud_Architecture.png">
 Simple overview of use/purpose.
 
 ## Description
-
-An in-depth paragraph about your project and overview of use.
+some description
 
 ## Getting Started
 
@@ -28,35 +26,30 @@ code blocks for commands
 ```
 
 ## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+Website not loading?
+- Use "http" instead of "https"
+ELB not loading?
+1) 
+- Add "My ip" http connection to Web-Server security group
+- Open public ip of EC2 on your laptop, see if working
+2.1) If Ec2 works
+   - Check ELB + Web-Server security groups & double-check connections are INBOUND & correctly set up as in the diagram
+2.2) If Ec2 doesnt work
+   - Add "My ip" ssh connection to Web-server security group
+   - SSH into ec2 w/ its public ip
+   - Check to see that index.php is correct
+My Auto-scaling-group isn't working?
+- Delete your previous Launch template & AMI
+- Recreate your AMI with a working EC2 web-server
+- Recreate Launch template & run ASG
 
 ## Authors
+Leonardo Paredes - All work (updated all from deprecated tutorial)
 
-Contributors names and contact info
+   Learned from
+LinkedIn Learning Tutorial - "AWS Essential Training for Architects 2019"
+https://www.linkedin.com/learning/aws-essential-training-for-architects-2019/amazon-web-services-essentials?u=67682169
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
 * [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 * [dbader](https://github.com/dbader/readme-template)
 * [zenorocha](https://gist.github.com/zenorocha/4526327)
