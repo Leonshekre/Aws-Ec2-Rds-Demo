@@ -30,7 +30,7 @@ code blocks for commands
 ```
 
 ## Help
-Website not loading?
+Website not loading? 
 - Use "http" instead of "https"
 
 ELB not loading?
