@@ -36,8 +36,8 @@ Website not loading?
 ELB not loading?
 
 1.
-- Add "My ip" http connection to Web-Server security group
-- Open public ip of EC2 on your laptop, see if working
+   - Add "My ip" http connection to Web-Server security group
+   - Open public ip of EC2 on your laptop, see if working
 2.
    1. If Ec2 works
       - Check ELB + Web-Server security groups & double-check connections are INBOUND & correctly set up as in the diagram
