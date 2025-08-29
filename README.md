@@ -1,6 +1,6 @@
 # AWS Web Demo (using ELB+Rc2+RDS)
 
-<img src="/diagrams/AWS_Cloud_Architecture.png" width="500" height="400">
+<img src="/diagrams/AWS_Cloud_Architecture.png">
 Simple overview of use/purpose.
 
 ## Description
