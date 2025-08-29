@@ -1,0 +1,11 @@
+#! /bin/bash -ex
+sudo dnf update -y
+sudo dnf install -y httpd php php-mysqli mariadb105
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo groupadd apache || true
+sudo usermod -a -G apache ec2-user
+sudo chown -R ec2-user:apache /var/www
+sudo chmod 2775 /var/www
+find /var/www -type d -exec chmod 2775 {} \;
+find /var/www -type f -exec chmod 0664 {} \;
