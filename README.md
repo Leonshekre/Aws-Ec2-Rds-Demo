@@ -32,6 +32,7 @@ code blocks for commands
 ## Help
 Website not loading?
 - Use "http" instead of "https"
+
 ELB not loading?
 1.
 - Add "My ip" http connection to Web-Server security group
@@ -43,6 +44,7 @@ ELB not loading?
       - Add "My ip" ssh connection to Web-server security group
       - SSH into ec2 w/ its public ip
       - Check to see that index.php is correct
+
 My Auto-scaling-group isn't working?
 - Delete your previous Launch template & AMI
 - Recreate your AMI with a working EC2 web-server
