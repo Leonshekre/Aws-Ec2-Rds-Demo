@@ -34,6 +34,7 @@ Website not loading?
 - Use "http" instead of "https"
 
 ELB not loading?
+
 1.
 - Add "My ip" http connection to Web-Server security group
 - Open public ip of EC2 on your laptop, see if working
